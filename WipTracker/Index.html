@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World!</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <script src="lib/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #6699cc;">
+                Wip Scanner Jammer
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+
+                        <!-- Read only Username -->
+                        <label for="employee" class="col-form-label col-xs-12 col-sm-3 col-md-2">Employee</label>
+                        <div class="col-sm-9 col-md-4 mb-sm-3">
+                            <input class="form-control" type="text" id="employee" value="Missing" disabled readonly>
+                        </div>
+
+                        <!-- Read only scanner Id -->
+                        <label for="scannerId" class="col-form-label col-xs-12 col-sm-3 col-md-2">Scanner Id</label>
+                        <div class="col-sm-9 col-md-4 mb-sm-3">
+                            <input class="form-control" type="text" id="scannerId" value="Missing" disabled readonly>
+                        </div>
+
+                        <!-- Read only Location -->
+                        <label for="location" class="col-form-label col-xs-12 col-sm-3 col-md-2">Location</label>
+                        <div class="col-sm-9 col-md-4 mb-sm-3">
+                            <input class="form-control" type="text" id="location" value="Missing" disabled readonly>
+                        </div>
+
+                        <!-- Read only Status -->
+                        <label for="status" class="col-form-label col-xs-12 col-sm-3 col-md-2">Status</label>
+                        <div class="col-sm-9 col-md-4 mb-sm-3">
+                            <input class="form-control" type="text" id="status" value="Missing" disabled readonly>
+                        </div>
+
+                        <!-- Scan data -->
+                        <label for="scanData" class="col-form-label col-xs-12 col-sm-3 col-md-2">Scan Data</label>
+                        <div class="col-sm-9 col-md-10">
+                            <input class="form-control" type="text" id="scanData">
+                        </div>
+
+                        <!-- Previous Scans -->
+                        <div class="table-responsive mt-4">
+                            <table class="table" id="previousScans">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Time Stamp</th>
+                                        <th>Scan Data</th>
+                                        <th>Server Response</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
